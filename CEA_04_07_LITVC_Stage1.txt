@@ -1,0 +1,717 @@
+*******************************************************************************													
+													
+NASA-GLENN	CHEMICAL	EQUILIBRIUM	PROGRAM	"CEA2,"	FEBRUARY	"5,"	2004						
+BY	BONNIE	MCBRIDE	AND	SANFORD	GORDON								
+REFS:	NASA	"RP-1311,"	PART	"I,"	1994	AND	NASA	"RP-1311,"	PART	"II,"	1996		
+													
+*******************************************************************************													
+													
+													
+													
+													
+###	CEA	analysis	performed	on	Mon	04-Jul-22	10:33:42						
+													
+#	Problem	Type:	Rocket	(Infinite	Area	Combustor)							
+													
+prob	case=Nhwang0407_____6101	ro	equilibrium										
+													
+#	Pressure	(1	value):										
+"p,bar="	0.04362												
+#	Supersonic	Area	Ratio	(1	value):								
+supar=	1												
+													
+#	Oxidizer/Fuel	Wt.	ratio	(9	values):								
+o/f=	"1,"	"1.5,"	"2,"	"2.5,"	"3,"	"3.5,"	"4,"	"4.5,"	5				
+													
+#	You	selected	the	following	fuels	and	oxidizers:						
+reac													
+fuel	CO	wt%=	10.133										
+fuel	CO2	wt%=	42.388										
+fuel	H	wt%=	0.001										
+fuel	H2	wt%=	0.213										
+fuel	H2O	wt%=	18.362										
+fuel	N2	wt%=	0.001										
+fuel	NO	wt%=	28.894										
+fuel	OH	wt%=	0.008										
+oxid	N2O4	wt%=	70										
+oxid	NO	wt%=	30										
+													
+#	You	selected	these	options	for	output:							
+#	short	version	of	output									
+output	short												
+#	Proportions	of	any	products	will	be	expressed	as	Mass	Fractions.			
+output	massf												
+#	Heat	will	be	expressed	as	siunits							
+output	siunits												
+													
+#	Input	prepared	by	this	script:/var/www/sites/cearun.grc.nasa.gov/cgi-bin/CEARU								
+N/prepareInputFile.cgi													
+													
+###	IMPORTANT:	The	following	line	is	the	end	of	your	CEA	input	file!	
+end													
+													
+													
+													
+													
+													
+THEORETICAL	ROCKET	PERFORMANCE	ASSUMING	EQUILIBRIUM									
+													
+COMPOSITION	DURING	EXPANSION	FROM	INFINITE	AREA	COMBUSTOR							
+													
+Pin	=	0.6	PSIA										
+CASE	=	Nhwang0407_____											
+													
+REACTANT	WT	FRACTION	ENERGY	TEMP									
+(SEE	NOTE)	KJ/KG-MOL	K										
+FUEL	CO	0.10133	0	0									
+FUEL	CO2	0.42388	0	0									
+FUEL	H	0.00001	0	0									
+FUEL	H2	0.00213	0	0									
+FUEL	H2O	0.18362	0	0									
+FUEL	N2	0.00001	0	0									
+FUEL	NO	0.28894	0	0									
+FUEL	OH	0.00008	0	0									
+OXIDANT	N2O4	0.7	0	0									
+OXIDANT	NO	0.3	0	0									
+													
+O/F=	1	%FUEL=	50	"R,EQ.RATIO="	0.45413	"PHI,EQ.RATIO=-0.122499"							
+													
+		CHAMBER	THROAT	EXIT									
+Pinf/P		1	1.7155	1.7155									
+"P,"	BAR	0.04362	0.02543	0.02543									
+"T,"	K	2471.39	2373.04	2373.04									
+"RHO,"	KG/CU M	6.1979-3	3.8076-3	3.8076-3									
+"H,"	KJ/KG	0	-370.05	-370.05									
+"U,"	KJ/KG	-703.78	-1037.83	-1037.83									
+"G,"	KJ/KG	-26659.2	-25968.4	-25968.4									
+"S,"	KJ/(KG)(K)	10.7871	10.7871	10.7871									
+													
+"M,"	(1/n)	29.197	29.547	29.547									
+(dLV/dLP)t		-1.02495	-1.02016	-1.02016									
+(dLV/dLT)p		1.6422	1.5428	1.5428									
+"Cp,"	KJ/(KG)(K)	6.2947	5.6818	5.6818									
+GAMMAs		1.1075	1.1083	1.1083									
+SON	"VEL,M/SEC"	882.9	860.3	860.3									
+MACH	NUMBER	0	1	1									
+													
+PERFORMANCE	PARAMETERS												
+													
+Ae/At			1	1									
+"CSTAR,"	M/SEC		1331.6	1331.6									
+CF			0.646	0.646									
+"Ivac,"	M/SEC		1636.5	1636.5									
+"Isp,"	M/SEC		860.3	860.3									
+													
+													
+MASS	FRACTIONS												
+													
+*CO	0.03903	0.03074	0.03074										
+*CO2	0.23021	0.24325	0.24325										
+*H	0.00028	0.00021	0.00021										
+HO2	0.00001	0.00001	0.00001										
+*H2	0.0004	0.00033	0.00033										
+H2O	0.0826	0.08591	0.08591										
+*NO	0.01556	0.013	0.013										
+NO2	0.00001	0	0										
+*N2	0.23676	0.23795	0.23795										
+*O	0.01868	0.01454	0.01454										
+*OH	0.02396	0.0202	0.0202										
+*O2	0.35249	0.35386	0.35386										
+													
+*	THERMODYNAMIC	PROPERTIES	FITTED	TO	20000.K								
+													
+NOTE.	WEIGHT	FRACTION	OF	FUEL	IN	TOTAL	FUELS	AND	OF	OXIDANT	IN	TOTAL	OXIDANTS
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+THEORETICAL	ROCKET	PERFORMANCE	ASSUMING	EQUILIBRIUM									
+													
+COMPOSITION	DURING	EXPANSION	FROM	INFINITE	AREA	COMBUSTOR							
+													
+Pin	=	0.6	PSIA										
+CASE	=	Nhwang0407_____											
+													
+REACTANT	WT	FRACTION	ENERGY	TEMP									
+(SEE	NOTE)	KJ/KG-MOL	K										
+FUEL	CO	0.10133	0	0									
+FUEL	CO2	0.42388	0	0									
+FUEL	H	0.00001	0	0									
+FUEL	H2	0.00213	0	0									
+FUEL	H2O	0.18362	0	0									
+FUEL	N2	0.00001	0	0									
+FUEL	NO	0.28894	0	0									
+FUEL	OH	0.00008	0	0									
+OXIDANT	N2O4	0.7	0	0									
+OXIDANT	NO	0.3	0	0									
+													
+O/F=	1.5	%FUEL=	40	"R,EQ.RATIO="	0.365306	"PHI,EQ.RATIO=-0.081666"							
+													
+		CHAMBER	THROAT	EXIT									
+Pinf/P		1	1.7295	1.7295									
+"P,"	BAR	0.04362	0.02522	0.02522									
+"T,"	K	2347.86	2229.34	2229.34									
+"RHO,"	KG/CU M	6.6989-3	4.1178-3	4.1178-3									
+"H,"	KJ/KG	0	-346.12	-346.12									
+"U,"	KJ/KG	-651.15	-958.62	-958.62									
+"G,"	KJ/KG	-24492.7	-23602.3	-23602.3									
+"S,"	KJ/(KG)(K)	10.4319	10.4319	10.4319									
+													
+"M,"	(1/n)	29.98	30.263	30.263									
+(dLV/dLP)t		-1.01248	-1.00837	-1.00837									
+(dLV/dLT)p		1.3416	1.243	1.243									
+"Cp,"	KJ/(KG)(K)	4.1142	3.4353	3.4353									
+GAMMAs		1.1221	1.1302	1.1302									
+SON	"VEL,M/SEC"	854.8	832	832									
+MACH	NUMBER	0	1	1									
+													
+PERFORMANCE	PARAMETERS												
+													
+Ae/At			1	1									
+"CSTAR,"	M/SEC		1273.2	1273.2									
+CF			0.6535	0.6535									
+"Ivac,"	M/SEC		1568.2	1568.2									
+"Isp,"	M/SEC		832	832									
+													
+													
+MASS	FRACTIONS												
+													
+*CO	0.01601	0.01026	0.01026										
+*CO2	0.20808	0.21711	0.21711										
+*H	0.0001	0.00006	0.00006										
+HO2	0.00001	0.00001	0.00001										
+*H2	0.00017	0.00011	0.00011										
+H2O	0.07072	0.07353	0.07353										
+*NO	0.01384	0.01085	0.01085										
+NO2	0.00001	0	0										
+*N2	0.25939	0.26078	0.26078										
+*O	0.01028	0.00673	0.00673										
+*OH	0.01514	0.01143	0.01143										
+*O2	0.40627	0.40913	0.40913										
+													
+*	THERMODYNAMIC	PROPERTIES	FITTED	TO	20000.K								
+													
+NOTE.	WEIGHT	FRACTION	OF	FUEL	IN	TOTAL	FUELS	AND	OF	OXIDANT	IN	TOTAL	OXIDANTS
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+THEORETICAL	ROCKET	PERFORMANCE	ASSUMING	EQUILIBRIUM									
+													
+COMPOSITION	DURING	EXPANSION	FROM	INFINITE	AREA	COMBUSTOR							
+													
+Pin	=	0.6	PSIA										
+CASE	=	Nhwang0407_____											
+													
+REACTANT	WT	FRACTION	ENERGY	TEMP									
+(SEE	NOTE)	KJ/KG-MOL	K										
+FUEL	CO	0.10133	0	0									
+FUEL	CO2	0.42388	0	0									
+FUEL	H	0.00001	0	0									
+FUEL	H2	0.00213	0	0									
+FUEL	H2O	0.18362	0	0									
+FUEL	N2	0.00001	0	0									
+FUEL	NO	0.28894	0	0									
+FUEL	OH	0.00008	0	0									
+OXIDANT	N2O4	0.7	0	0									
+OXIDANT	NO	0.3	0	0									
+													
+O/F=	2	%FUEL=	33.333333	"R,EQ.RATIO="	0.305544	"PHI,EQ.RATIO=-0.061250"							
+													
+CHAMBER	THROAT	EXIT											
+Pinf/P		1	1.7538	1.7538									
+"P,"	BAR	0.04362	0.02487	0.02487									
+"T,"	K	2212.37	2062.65	2062.65									
+"RHO,"	KG/CU M	7.2083-3	4.4357-3	4.4357-3									
+"H,"	KJ/KG	0	-327.57	-327.57									
+"U,"	KJ/KG	-605.14	-888.27	-888.27									
+"G,"	KJ/KG	-22523.2	-21326.4	-21326.4									
+"S,"	KJ/(KG)(K)	10.1805	10.1805	10.1805									
+													
+"M,"	(1/n)	30.398	30.586	30.586									
+(dLV/dLP)t		-1.00542	-1.0027	-1.0027									
+(dLV/dLT)p		1.1594	1.0863	1.0863									
+"Cp,"	KJ/(KG)(K)	2.748	2.1844	2.1844									
+GAMMAs		1.1473	1.1684	1.1684									
+SON	"VEL,M/SEC"	833.2	809.4	809.4									
+MACH	NUMBER	0	1	1									
+													
+PERFORMANCE	PARAMETERS												
+													
+Ae/At			1	1									
+"CSTAR,"	M/SEC		1214.9	1214.9									
+CF			0.6662	0.6662									
+"Ivac,"	M/SEC		1502.1	1502.1									
+"Isp,"	M/SEC		809.4	809.4									
+													
+													
+MASS	FRACTIONS												
+													
+*CO	0.00568	0.00257	0.00257										
+*CO2	0.18544	0.19033	0.19033										
+*H	0.00003	0.00001	0.00001										
+HO2	0.00001	0	0										
+*H2	0.00006	0.00003	0.00003										
+H2O	0.06213	0.06433	0.06433										
+*NO	0.01122	0.00787	0.00787										
+NO2	0.00001	0	0										
+*N2	0.27516	0.27672	0.27672										
+*O	0.0048	0.00232	0.00232										
+*OH	0.00875	0.00544	0.00544										
+*O2	0.44671	0.45037	0.45037										
+													
+*	THERMODYNAMIC	PROPERTIES	FITTED	TO	20000.K								
+													
+NOTE.	WEIGHT	FRACTION	OF	FUEL	IN	TOTAL	FUELS	AND	OF	OXIDANT	IN	TOTAL	OXIDANTS
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+THEORETICAL	ROCKET	PERFORMANCE	ASSUMING	EQUILIBRIUM									
+													
+COMPOSITION	DURING	EXPANSION	FROM	INFINITE	AREA	COMBUSTOR							
+													
+Pin	=	0.6	PSIA										
+CASE	=	Nhwang0407_____											
+													
+REACTANT	WT	FRACTION	ENERGY	TEMP									
+(SEE	NOTE)	KJ/KG-MOL	K										
+FUEL	CO	0.10133	0	0									
+FUEL	CO2	0.42388	0	0									
+FUEL	H	0.00001	0	0									
+FUEL	H2	0.00213	0	0									
+FUEL	H2O	0.18362	0	0									
+FUEL	N2	0.00001	0	0									
+FUEL	NO	0.28894	0	0									
+FUEL	OH	0.00008	0	0									
+OXIDANT	N2O4	0.7	0	0									
+OXIDANT	NO	0.3	0	0									
+													
+O/F=	2.5	%FUEL=	28.571429	"R,EQ.RATIO="	0.262587	"PHI,EQ.RATIO=-0.049000"							
+													
+CHAMBER	THROAT	EXIT											
+Pinf/P		1	1.7805	1.7805									
+"P,"	BAR	0.04362	0.0245	0.0245									
+"T,"	K	2065.59	1884.93	1884.93									
+"RHO,"	KG/CU	7.7689-3	4.7965-3	4.7965-3									
+"H,"	KJ/KG	0	-309.37	-309.37									
+"U,"	KJ/KG	-561.47	-820.13	-820.13									
+"G,"	KJ/KG	-20633.2	-19137.9	-19137.9									
+"S,"	KJ/(KG)(K)	9.989	9.989	9.989									
+													
+"M,"	(1/n)	30.588	30.684	30.684									
+(dLV/dLP)t		-1.00202	-1.00071	-1.00071									
+(dLV/dLT)p		1.0645	1.0253	1.0253									
+"Cp,"	KJ/(KG)(K)	1.9784	1.6255	1.6255									
+GAMMAs		1.1816	1.2114	1.2114									
+SON	"VEL,M/SEC"	814.5	786.6	786.6									
+MACH	NUMBER	0	1	1									
+													
+PERFORMANCE	PARAMETERS												
+													
+Ae/At			1	1									
+"CSTAR,"	M/SEC		1156.1	1156.1									
+CF			0.6804	0.6804									
+"Ivac,"	M/SEC		1435.9	1435.9									
+"Isp,"	M/SEC		786.6	786.6									
+													
+													
+MASS	FRACTIONS												
+													
+*CO	0.00166	0.00047	0.00047										
+*CO2	0.16399	0.16586	0.16586										
+*H	0.00001	0	0										
+*H2	0.00002	0.00001	0.00001										
+H2O	0.05531	0.05672	0.05672										
+*NO	0.00832	0.00502	0.00502										
+NO2	0.00001	0	0										
+*N2	0.28691	0.28845	0.28845										
+*O	0.00184	0.00059	0.00059										
+*OH	0.00451	0.00215	0.00215										
+*O2	0.47743	0.48072	0.48072										
+													
+*	THERMODYNAMIC	PROPERTIES	FITTED	TO	20000.K								
+													
+NOTE.	WEIGHT	FRACTION	OF	FUEL	IN	TOTAL	FUELS	AND	OF	OXIDANT	IN	TOTAL	OXIDANTS
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+THEORETICAL	ROCKET	PERFORMANCE	ASSUMING	EQUILIBRIUM									
+													
+COMPOSITION	DURING	EXPANSION	FROM	INFINITE	AREA	COMBUSTOR							
+													
+Pin	=	0.6	PSIA										
+CASE	=	Nhwang0407_____											
+													
+REACTANT	WT	FRACTION	ENERGY	TEMP									
+(SEE	NOTE)	KJ/KG-MOL	K										
+FUEL	CO	0.10133	0	0									
+FUEL	CO2	0.42388	0	0									
+FUEL	H	0.00001	0	0									
+FUEL	H2	0.00213	0	0									
+FUEL	H2O	0.18362	0	0									
+FUEL	N2	0.00001	0	0									
+FUEL	NO	0.28894	0	0									
+FUEL	OH	0.00008	0	0									
+OXIDANT	N2O4	0.7	0	0									
+OXIDANT	NO	0.3	0	0									
+													
+O/F=	3	%FUEL=	25	"R,EQ.RATIO="	0.230219	"PHI,EQ.RATIO=-0.040833"							
+													
+CHAMBER	THROAT	EXIT											
+Pinf/P		1	1.7983	1.7983									
+"P,"	BAR	0.04362	0.02426	0.02426									
+"T,"	K	1917.45	1721.23	1721.23									
+"RHO,"	KG/CU	8.3865-3	5.2020-3	5.2020-3									
+"H,"	KJ/KG	0	-289.38	-289.38									
+"U,"	KJ/KG	-520.12	-755.68	-755.68									
+"G,"	KJ/KG	-18858	-17217.6	-17217.6									
+"S,"	KJ/(KG)(K)	9.8349	9.8349	9.8349									
+													
+"M,"	(1/n)	30.652	30.691	30.691									
+(dLV/dLP)t		-1.00068	-1.00018	-1.00018									
+(dLV/dLT)p		1.0238	1.0072	1.0072									
+"Cp,"	KJ/(KG)(K)	1.6	1.4128	1.4128									
+GAMMAs		1.2151	1.2412	1.2412									
+SON	"VEL,M/SEC"	795	760.8	760.8									
+MACH	NUMBER	0	1	1									
+													
+PERFORMANCE	PARAMETERS												
+													
+Ae/At			1	1									
+"CSTAR,"	M/SEC		1102.2	1102.2									
+CF			0.6902	0.6902									
+"Ivac,"	M/SEC		1373.7	1373.7									
+"Isp,"	M/SEC		760.8	760.8									
+													
+													
+MASS	FRACTIONS												
+													
+*CO	0.00041	0.00007	0.00007										
+*CO2	0.14513	0.14565	0.14565										
+*H2	0.00001	0	0										
+H2O	0.04952	0.05027	0.05027										
+*NO	0.00573	0.00299	0.00299										
+NO2	0.00001	0	0										
+*N2	0.29591	0.29719	0.29719										
+*O	0.0006	0.00013	0.00013										
+*OH	0.00209	0.00077	0.00077										
+*O2	0.50059	0.5029	0.5029										
+													
+*	THERMODYNAMIC	PROPERTIES	FITTED	TO	20000.K								
+													
+NOTE.	WEIGHT	FRACTION	OF	FUEL	IN	TOTAL	FUELS	AND	OF	OXIDANT	IN	TOTAL	OXIDANTS
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+THEORETICAL	ROCKET	PERFORMANCE	ASSUMING	EQUILIBRIUM									
+													
+COMPOSITION	DURING	EXPANSION	FROM	INFINITE	AREA	COMBUSTOR							
+													
+Pin	=	0.6	PSIA										
+CASE	=	Nhwang0407_____											
+													
+REACTANT	WT	FRACTION	ENERGY	TEMP									
+(SEE	NOTE)	KJ/KG-MOL	K										
+FUEL	CO	0.10133	0	0									
+FUEL	CO2	0.42388	0	0									
+FUEL	H	0.00001	0	0									
+FUEL	H2	0.00213	0	0									
+FUEL	H2O	0.18362	0	0									
+FUEL	N2	0.00001	0	0									
+FUEL	NO	0.28894	0	0									
+FUEL	OH	0.00008	0	0									
+OXIDANT	N2O4	0.7	0	0									
+OXIDANT	NO	0.3	0	0									
+													
+O/F=	3.5	%FUEL=	22.222222	"R,EQ.RATIO="	0.204956	"PHI,EQ.RATIO=-0.035000"							
+													
+		CHAMBER	THROAT	EXIT									
+Pinf/P		1	1.8084	1.8084									
+"P,"	BAR	0.04362	0.02412	0.02412									
+"T,"	K	1780.16	1582.17	1582.17									
+"RHO,"	KG/CU	9.0360-3	5.6246-3	5.6246-3									
+"H,"	KJ/KG	0	-269.89	-269.89									
+"U,"	KJ/KG	-482.74	-698.72	-698.72									
+"G,"	KJ/KG	-17278.5	-15626.7	-15626.7									
+"S,"	KJ/(KG)(K)	9.7062	9.7062	9.7062									
+													
+"M,"	(1/n)	30.661	30.676	30.676									
+(dLV/dLP)t		-1.00022	-1.00005	-1.00005									
+(dLV/dLT)p		1.0087	1.0022	1.0022									
+"Cp,"	KJ/(KG)(K)	1.4262	1.3243	1.3243									
+GAMMAs		1.2395	1.2587	1.2587									
+SON	"VEL,M/SEC"	773.5	734.7	734.7									
+MACH	NUMBER	0	1	1									
+													
+PERFORMANCE	PARAMETERS												
+													
+Ae/At			1	1									
+"CSTAR,"	M/SEC		1055.6	1055.6									
+CF			0.696	0.696									
+"Ivac,"	M/SEC		1318.4	1318.4									
+"Isp,"	M/SEC		734.7	734.7									
+													
+													
+MASS	FRACTIONS												
+													
+*CO	0.00009	0.00001	0.00001										
+*CO2	0.12943	0.12956	0.12956										
+H2O	0.04456	0.04492	0.04492										
+*NO	0.00379	0.00175	0.00175										
+*N2	0.30288	0.30383	0.30383										
+*O	0.00018	0.00003	0.00003										
+*OH	0.00092	0.00028	0.00028										
+*O2	0.51814	0.51962	0.51962										
+													
+*	THERMODYNAMIC	PROPERTIES	FITTED	TO	20000.K								
+													
+NOTE.	WEIGHT	FRACTION	OF	FUEL	IN	TOTAL	FUELS	AND	OF	OXIDANT	IN	TOTAL	OXIDANTS
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+THEORETICAL	ROCKET	PERFORMANCE	ASSUMING	EQUILIBRIUM									
+													
+COMPOSITION	DURING	EXPANSION	FROM	INFINITE	AREA	COMBUSTOR							
+													
+Pin	=	0.6	PSIA										
+CASE	=	Nhwang0407_____											
+													
+REACTANT	WT	FRACTION	ENERGY	TEMP									
+(SEE	NOTE)	KJ/KG-MOL	K										
+FUEL	CO	0.10133	0	0									
+FUEL	CO2	0.42388	0	0									
+FUEL	H	0.00001	0	0									
+FUEL	H2	0.00213	0	0									
+FUEL	H2O	0.18362	0	0									
+FUEL	N2	0.00001	0	0									
+FUEL	NO	0.28894	0	0									
+FUEL	OH	0.00008	0	0									
+OXIDANT	N2O4	0.7	0	0									
+OXIDANT	NO	0.3	0	0									
+													
+O/F=	4	%FUEL=	20	"R,EQ.RATIO="	0.184689	"PHI,EQ.RATIO=-0.030625"							
+													
+CHAMBER	THROAT	EXIT											
+Pinf/P		1	1.815	1.815									
+"P,"	BAR	0.04362	0.02403	0.02403									
+"T,"	K	1659.39	1465.9	1465.9									
+"RHO,"	KG/CU	9.6908-3	6.0452-3	6.0452-3									
+"H,"	KJ/KG	0	-252.43	-252.43									
+"U,"	KJ/KG	-450.12	-649.99	-649.99									
+"G,"	KJ/KG	-15923.1	-14318.8	-14318.8									
+"S,"	KJ/(KG)(K)	9.5958	9.5958	9.5958									
+													
+"M,"	(1/n)	30.652	30.658	30.658									
+(dLV/dLP)t		-1.00008	-1.00002	-1.00002									
+(dLV/dLT)p		1.0033	1.0007	1.0007									
+"Cp,"	KJ/(KG)(K)	1.3414	1.2778	1.2778									
+GAMMAs		1.2555	1.2699	1.2699									
+SON	"VEL,M/SEC"	751.7	710.5	710.5									
+MACH	NUMBER	0	1	1									
+													
+PERFORMANCE	PARAMETERS												
+													
+Ae/At			1	1									
+"CSTAR,"	M/SEC		1015.5	1015.5									
+CF			0.6997	0.6997									
+"Ivac,"	M/SEC		1270.1	1270.1									
+"Isp,"	M/SEC		710.5	710.5									
+													
+													
+MASS	FRACTIONS												
+													
+*CO	0.00002	0	0										
+*CO2	0.11658	0.11661	0.11661										
+H2O	0.04034	0.0405	0.0405										
+*NO	0.00247	0.00103	0.00103										
+*N2	0.30835	0.30902	0.30902										
+*O	0.00005	0.00001	0.00001										
+*OH	0.0004	0.0001	0.0001										
+*O2	0.53178	0.53272	0.53272										
+													
+*	THERMODYNAMIC	PROPERTIES	FITTED	TO	20000.K								
+													
+NOTE.	WEIGHT	FRACTION	OF	FUEL	IN	TOTAL	FUELS	AND	OF	OXIDANT	IN	TOTAL	OXIDANTS
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+THEORETICAL	ROCKET	PERFORMANCE	ASSUMING	EQUILIBRIUM									
+													
+COMPOSITION	DURING	EXPANSION	FROM	INFINITE	AREA	COMBUSTOR							
+													
+Pin	=	0.6	PSIA										
+CASE	=	Nhwang0407_____											
+													
+REACTANT	WT	FRACTION	ENERGY	TEMP									
+(SEE	NOTE)	KJ/KG-MOL	K										
+FUEL	CO	0.10133	0	0									
+FUEL	CO2	0.42388	0	0									
+FUEL	H	0.00001	0	0									
+FUEL	H2	0.00213	0	0									
+FUEL	H2O	0.18362	0	0									
+FUEL	N2	0.00001	0	0									
+FUEL	NO	0.28894	0	0									
+FUEL	OH	0.00008	0	0									
+OXIDANT	N2O4	0.7	0	0									
+OXIDANT	NO	0.3	0	0									
+													
+O/F=	4.5	%FUEL=	18.181818	"R,EQ.RATIO="	0.168069	"PHI,EQ.RATIO=-0.027222"							
+													
+CHAMBER	THROAT	EXIT											
+Pinf/P		1	1.8198	1.8198									
+"P,"	BAR	0.04362	0.02397	0.02397									
+"T,"	K	1555.08	1368.07	1368.07									
+"RHO,"	KG/CU	1.0336-2	6.4568-3	6.4568-3									
+"H,"	KJ/KG	0	-237.23	-237.23									
+"U,"	KJ/KG	-422	-608.46	-608.46									
+"G,"	KJ/KG	-14772.3	-13233.1	-13233.1									
+"S,"	KJ/(KG)(K)	9.4994	9.4994	9.4994									
+													
+"M,"	(1/n)	30.639	30.641	30.641									
+(dLV/dLP)t		-1.00003	-1.00001	-1.00001									
+(dLV/dLT)p		1.0013	1.0003	1.0003									
+"Cp,"	KJ/(KG)(K)	1.2939	1.2477	1.2477									
+GAMMAs		1.2662	1.2781	1.2781									
+SON	"VEL,M/SEC"	731	688.8	688.8									
+MACH	NUMBER	0	1	1									
+													
+PERFORMANCE	PARAMETERS												
+													
+Ae/At		1	1										
+"CSTAR,"	M/SEC	980.8	980.8										
+CF		0.7023	0.7023										
+"Ivac,"	M/SEC	1227.7	1227.7										
+"Isp,"	M/SEC	688.8	688.8										
+													
+													
+MASS	FRACTIONS												
+													
+*CO2	0.10601	0.10602	0.10602										
+H2O	0.03678	0.03685	0.03685										
+*NO	0.00161	0.00061	0.00061										
+*N2	0.31272	0.31319	0.31319										
+*O	0.00002	0	0										
+*OH	0.00018	0.00004	0.00004										
+*O2	0.54269	0.54329	0.54329										
+													
+*	THERMODYNAMIC	PROPERTIES	FITTED	TO	20000.K								
+													
+NOTE.	WEIGHT	FRACTION	OF	FUEL	IN	TOTAL	FUELS	AND	OF	OXIDANT	IN	TOTAL	OXIDANTS
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+THEORETICAL	ROCKET	PERFORMANCE	ASSUMING	EQUILIBRIUM									
+													
+COMPOSITION	DURING	EXPANSION	FROM	INFINITE	AREA	COMBUSTOR							
+													
+Pin	=	0.6	PSIA										
+CASE	=	Nhwang0407_____											
+													
+REACTANT	WT	FRACTION	ENERGY	TEMP									
+(SEE	NOTE)	KJ/KG-MOL	K										
+FUEL	CO	0.10133	0	0									
+FUEL	CO2	0.42388	0	0									
+FUEL	H	0.00001	0	0									
+FUEL	H2	0.00213	0	0									
+FUEL	H2O	0.18362	0	0									
+FUEL	N2	0.00001	0	0									
+FUEL	NO	0.28894	0	0									
+FUEL	OH	0.00008	0	0									
+OXIDANT	N2O4	0.7	0	0									
+OXIDANT	NO	0.3	0	0									
+													
+O/F=	5	%FUEL=	16.666667	"R,EQ.RATIO="	0.154194	"PHI,EQ.RATIO=-0.024500"							
+													
+CHAMBER	THROAT	EXIT											
+Pinf/P		1	1.8237	1.8237									
+"P,"	BAR	0.04362	0.02392	0.02392									
+"T,"	K	1465.07	1284.86	1284.86									
+"RHO,"	KG/CU	1.0967-2	6.8572-3	6.8572-3									
+"H,"	KJ/KG	0	-224.04	-224.04									
+"U,"	KJ/KG	-397.74	-572.85	-572.85									
+"G,"	KJ/KG	-13792.5	-12319.9	-12319.9									
+"S,"	KJ/(KG)(K)	9.4142	9.4142	9.4142									
+													
+"M,"	(1/n)	30.626	30.627	30.627									
+(dLV/dLP)t		-1.00001	-1	-1									
+(dLV/dLT)p		1.0006	1.0001	1.0001									
+"Cp,"	KJ/(KG)(K)	1.2631	1.2254	1.2254									
+GAMMAs		1.2742	1.2847	1.2847									
+SON	"VEL,M/SEC"	711.9	669.4	669.4									
+MACH	NUMBER	0	1	1									
+													
+PERFORMANCE	PARAMETERS												
+													
+Ae/At		1	1										
+"CSTAR,"	M/SEC	950.3	950.3										
+CF		0.7044	0.7044										
+"Ivac,"	M/SEC	1190.5	1190.5										
+"Isp,"	M/SEC	669.4	669.4										
+													
+													
+MASS	FRACTIONS												
+													
+*CO2	0.09718	0.09718	0.09718										
+H2O	0.03376	0.03379	0.03379										
+*NO	0.00106	0.00037	0.00037										
+*N2	0.31629	0.31661	0.31661										
+*OH	0.00008	0.00001	0.00001										
+*O2	0.55163	0.55204	0.55204										
+													
+*	THERMODYNAMIC	PROPERTIES	FITTED	TO	20000.K								
+													
+NOTE.	WEIGHT	FRACTION	OF	FUEL	IN	TOTAL	FUELS	AND	OF	OXIDANT	IN	TOTAL	OXIDANTS
